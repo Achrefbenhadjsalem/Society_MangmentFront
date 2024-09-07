@@ -97,6 +97,12 @@ export class AccountService {
     public getCurrentGroupChatValue() {
         return this.CurrentgroupchatSubject.value;
     }
+
+    public getCurrentUserInfo(): Observable<User> {
+        const userId = this.userValue?.id;  // Check if userId is defined
+        console.log('Fetching details for user ID:', userId);  // Log the user ID
+        return this.http.get<User>(`${environment.apiUrl}/api/user/getuserbyid/${userId}`);
+      }
     getIsConnected() {
         return this.userValue != null ;
     }

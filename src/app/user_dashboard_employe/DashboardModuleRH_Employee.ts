@@ -16,11 +16,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatSelectModule} from '@angular/material/select';
 import { SettingsComponent } from './settings/settings.component';
 import { MatDialog } from '@angular/material/dialog';
-import { TicketlistuComponent } from './ticketlistu/ticketlistu.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
-import { MeetinfRoomComponent } from './meetinf-room/meetinf-room.component';
-import { MeetingsComponent } from './meetings/meetings.component';
-import { ActivityuseComponent } from './activityuse/activityuse.component';
 
 import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from "@angular/core";
 import {VerticalNavBarComponent} from "./vertical-nav-bar/vertical-nav-bar.component";
@@ -38,12 +34,6 @@ const dashboardRoutes: Routes = [
     {path:'header', component:HeaderComponent},
     {path: 'vertical-nav-bar', component: VerticalNavBarComponent },
     {path: 'settings',component:SettingsComponent},
-   // {path:'solutions', component:SolutionComponent},
-    {path:'ticketlist', component:TicketlistuComponent},
-    {path:'MeetRoom', component:MeetinfRoomComponent},
-    {path:'MeetingsListe', component:MeetingsComponent},
-    { path: 'meeting/:meetingId', component: MeetinfRoomComponent },
-    { path: 'Activityuse', component: ActivityuseComponent },
 
 
 
@@ -66,11 +56,7 @@ const dashboardRoutes: Routes = [
       VerticalNavBarComponent,
       MonprofilComponent,
 
-      TicketlistuComponent,
-      MeetinfRoomComponent,
-      MeetingsComponent,
-      ActivityuseComponent,
-      
+     
      
     ],
     imports: [

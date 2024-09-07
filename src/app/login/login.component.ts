@@ -197,21 +197,21 @@ refreshToken(): void {
           const userAuthorities = response.authorities.map((authority) => authority.authority);
           
           if (userAuthorities.includes("Entreprise")) {
-            this.router.navigate(['user_dashboard_Consultant/monprofil']);
+            this.router.navigate(['user_dashboard_CRM/monprofil']);
           } else if (userAuthorities.includes("Consult")) {
-            this.router.navigate(['user_dashboard_Consultant/monprofil']);
+            this.router.navigate(['user_dashboard_CRM/monprofil']);
           } else if (userAuthorities.includes("Employee")) {
-            this.router.navigate(['user_dashboard_employe/monprofil']);
+            this.router.navigate(['user_dashboard_CRM/monprofil']);
           } else if (userAuthorities.includes("Manager")) {
-            this.router.navigate(['user_dashboard_employe/monprofil']);
+            this.router.navigate(['user_dashboard_CRM/monprofil']);
           } else if (userAuthorities.includes("HR")) {
-            this.router.navigate(['user_dashboardRH_w/monprofil']);
+            this.router.navigate(['user_dashboard_CRM/monprofil']);
           }
           //else if (userAuthorities.includes("CRM")) {
            // this.router.navigate(['user_dashboard_CRM/monprofil']);
           //}
           else if (userAuthorities.includes("PM")) {
-            this.router.navigate(['user_dashboard_employe/monprofil']);
+            this.router.navigate(['user_dashboard_CRM/monprofil']);
 
           } else if (userAuthorities.includes("ADMIN")) {
             this.router.navigate(['admin/admindashboard']);

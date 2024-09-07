@@ -38,7 +38,6 @@ import { CardGPCHATComponent } from './card-gpchat/card-gpchat.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { UpdateDialogComponent } from './group-chat/update-dialog/update-dialog.component';
 import { NotifDialogComponent } from './notifications/notif-dialog/notif-dialog.component';
-import { AdminListSalaire } from './salaire/admin-list-salaire';
 import { ActivityComponent } from './activity/activity.component';
 import { AddactivityComponent } from './addactivity/addactivity.component';
 import { EditActivityComponent } from '../edit-activity/edit-activity.component';
@@ -87,7 +86,6 @@ children: [
     //{ path: 'RoomConfiguration', component: RoomConfigurationComponent },
 
    { path: 'ChatRooms',  component: GroupChatComponent },
-    { path: 'listesalaire', component: AdminListSalaire },
     { path: 'addactivity', component: AddactivityComponent },
     { path: 'edit/:id', component: EditActivityComponent },
     { path: 'activity', component: ActivityComponent },]}

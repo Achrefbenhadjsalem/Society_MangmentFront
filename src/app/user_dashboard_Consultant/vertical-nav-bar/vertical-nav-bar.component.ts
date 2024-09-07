@@ -6,7 +6,6 @@ import {
   callOutline,
   settingsOutline,
 } from 'ionicons/icons';
-import {ProjectDetailsComponent} from '../project-details/project-details.component';
 interface RouteWithComponent {
     path: string;
     title: string;
@@ -32,7 +31,6 @@ export const ROUTES: RouteInfo[] = [
     { path: '/user_dashboard_Consultant/time-record', title: 'TimeRecord', icon: 'monetization_on', class: '' },
     { path: '/user_dashboard_Consultant/projects', title: 'Projects', icon: 'projects', class: '',
         children: [
-            { path: 'project-details', title: 'Project Details', component: ProjectDetailsComponent }
         ]
     },
     { path: '/user_dashboard_Consultant/proj-feed', title: 'ProjectFeed', icon: 'feedbacks', class: '' },

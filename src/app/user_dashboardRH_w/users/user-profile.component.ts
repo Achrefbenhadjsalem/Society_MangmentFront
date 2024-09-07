@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { UserService } from './user.service';
-import { EvaluationService } from '../evaluation/evaluation.service';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -19,7 +18,6 @@ import { HttpClient } from '@angular/common/http';
   averageRating: number;
   photoUrl:any;
     constructor(private route: ActivatedRoute, private userService: UserService,
-      private evaluationService: EvaluationService,
       private http: HttpClient
     ) { }
   
@@ -48,19 +46,7 @@ import { HttpClient } from '@angular/common/http';
         }
       };
   
-      this.evaluationService.addEvaluation(evaluationData).subscribe(
-        (response: any) => {
-          console.log('Evaluation added successfully:', response);
-          // Reset form fields
-          this.userId = null;
-          this.evaluationRange = null;
-          this.description = '';
-          this.evaluatorType = '';
-        },
-        error => {
-          console.error('Error adding evaluation:', error);
-        }
-      );
+      
     }
 
     fetchAverageRating(userId: number) {

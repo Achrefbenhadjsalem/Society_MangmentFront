@@ -110,13 +110,13 @@ export class MonprofilComponent implements OnInit {
 
         var completedTasksChart = new Chartist.Line('#completedTasksChart', dataCompletedTasksChart, optionsCompletedTasksChart);
 
-        // start animation for the Completed Tasks Chart - Line Chart
         this.startAnimationForLineChart(completedTasksChart);
 
 
 
-        /* ----------==========     Emails Subscription Chart initialization    ==========---------- */
 
+
+        
         var datawebsiteViewsChart = {
             labels: ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'],
             series: [

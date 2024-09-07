@@ -29,7 +29,6 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { AboutDirective } from './shared/aboutus/about.directive';
 import { ErrorInterceptor, JwtInterceptor } from './_helpers';
 import { CandidatComponent } from './candidat/candidat.component';
-import { AffichagequestionComponent } from './affichagequestion/affichagequestion.component';
 
 import { MyquizComponent } from './myquiz/myquiz.component';
 //import { MatDialogModule } from '@angular/material/dialog';
@@ -48,27 +47,14 @@ import { environment } from 'src/environments/environment';
 import { ForgetpassComponent } from './forgetpass/forgetpass.component';
 import { LoginforgetpasswordComponent } from './loginforgetpassword/loginforgetpassword.component';
 import { ChatRoomComponent } from './chat-room/chat-room.component';
-import { SalaryComponent } from './user_dashboardRH_w/salary/salary.component';
-import { DisplaySalariesComponent } from './user_dashboardRH_w/salary/display-salaries.component';
 import { MatDialogModule } from '@angular/material/dialog';
-import { AddCongeModalComponent } from './user_dashboardRH_w/conge/add-conge-modal.component';
 import { UsersComponent } from './user_dashboardRH_w/users/users.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
-import { UserProfileComponent } from './user_dashboardRH_w/users/user-profile.component';
-import { EvaluationComponent } from './user_dashboardRH_w/evaluation/evaluation.component';
-import { EvaluationManagerComponent } from './user_dashboardRH_w/evaluation/evaluation.manager.component';
-import { CameraComponent } from './user_dashboardRH_w/pointage/camera.component';
-import { AddAskComponent } from './user_dashboardRH_w/demandeConge/add-demande.component';
-import { DemandeCongeComponent } from './user_dashboardRH_w/demandeConge/table-demande-component';
 import { MatIconModule } from '@angular/material/icon';
-import { RappelPointageComponent } from './user_dashboardRH_w/pointage/rappel.pointage.component';
-import { CongeDetailsModalComponent } from './user_dashboardRH_w/conge/conge-details-modal.component';
-import { AdminListSalaire } from './admin/salaire/admin-list-salaire';
 import { DashboardModuleRHw } from './user_dashboardRH_w/DashboardModuleRHw.module';
 import { SocketIoModule, SocketIoConfig } from 'ngx-socket-io';
 import { DashboardModuleRHd } from './user_dashboardRH_d/DashboardModuleRHd.module';
-import { ProjectDetailsComponent } from './user_dashboard_Consultant/project-details/project-details.component';
 
 const config: SocketIoConfig = { url: 'ws://localhost:8082/ws', options: {} };
 // social login
@@ -92,7 +78,6 @@ import {DashboardModuleRH_Employee} from "./user_dashboard_employe/DashboardModu
     AboutusComponent,
     ContactComponent,
   CandidatComponent,
-  AffichagequestionComponent,
 TESTComponent,
 
     AboutDirective,
@@ -112,18 +97,9 @@ TESTComponent,
     ForgetpassComponent,
     LoginforgetpasswordComponent,
     ChatRoomComponent,
-    SalaryComponent,
-    AddCongeModalComponent,
+ 
     UsersComponent,
-    EvaluationComponent,
-    EvaluationManagerComponent,
-    CameraComponent,
-    AddAskComponent,
-    DemandeCongeComponent,
-    RappelPointageComponent,
-    CongeDetailsModalComponent,
-    AdminListSalaire,
-    ProjectDetailsComponent,
+
 
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
